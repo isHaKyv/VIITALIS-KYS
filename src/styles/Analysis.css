@@ -1,0 +1,155 @@
+/* Main container */
+.analysis-container {
+    display: flex;
+    justify-content: center; /* Center the box horizontally */
+    align-items: center; /* Center the box vertically */
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+    background-color: #f4f4f4; /* Light gray background */
+    position: relative;
+}
+
+/* Larger and more spacious box */
+.analysis-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%; /* Wider box */
+    max-width: 1220px; /* Increased max width */
+    height: 80%; /* Taller box */
+    background-color: white; /* White box */
+    border-radius: 20px; /* Slightly larger rounded corners */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+    padding: 130px; /* Increased padding for more breathing room */
+    gap: 5px;
+}
+
+/* Title */
+.analysis-title {
+    font-size: 2.5em; /* Larger title */
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px; /* Spaced below the title */
+}
+
+/* Content section */
+.content-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Space between the image and the list */
+    align-items: center;
+    width: 100%;
+    gap: 40px; /* Larger gap between the image and the sensor list */
+}
+
+/* Body Section */
+.body-section {
+    flex: 1; /* Takes equal space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-image {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensures proper scaling */
+}
+
+/* Measurements Section */
+.measurements-section {
+    flex: 1; /* Takes equal space */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align list to the left */
+    justify-content: center;
+    gap: 20px; /* More spacing between list items */
+}
+
+.measurements-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.measurement-item {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* More spacing between the icon and value */
+    font-size: 1.5em; /* Larger font for better readability */
+}
+
+.measurement-icon {
+    width: 50px; /* Larger icon */
+    height: 50px;
+    background-color: #d4e9fa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8em;
+}
+
+.measurement-value {
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* Buttons Section */
+.buttons-section {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    align-items: center;
+    gap: 20px; /* Larger gap between buttons */
+    margin-top: 20px;
+    width: 100%;
+}
+
+button {
+    padding: 15px 25px; /* Larger buttons */
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.start-button {
+    background-color: #5b9bd5;
+    color: white;
+}
+
+.stop-button {
+    background-color: #cccccc;
+    color: black;
+}
+
+.next-button {
+    background-color: #cccccc;
+    color: black;
+}
+
+/* Circular button for statistics */
+.stats-button {
+    position: absolute;
+    bottom: 30px; /* Slightly higher from the bottom */
+    right: 30px; /* Slightly inward from the right */
+    width: 70px; /* Larger button */
+    height: 70px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2em; /* Larger icon */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+    transition: background-color 0.3s ease;
+}
+
+.stats-button:hover {
+    background-color: #0056b3;
+}
